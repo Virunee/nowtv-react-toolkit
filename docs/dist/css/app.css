@@ -1570,7 +1570,8 @@ hr {
 .now-accordion .now-accordion-item {
   cursor: pointer;
   position: relative;
-  padding-left: 27px; }
+  padding-left: 27px;
+  z-index: 0; }
 
 .now-accordion .now-accordion-item:before {
   width: 16px;
@@ -1587,6 +1588,11 @@ hr {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   transition-timing-function: ease-in-out; }
+
+.now-accordion .now-accordion-item .accordion-item-title {
+  color: #424247;
+  text-decoration: none;
+  z-index: 100; }
 
 .now-accordion .now-accordion-item .accordion-item-content {
   transition: max-height 0.3s linear, margin 0.3s linear;
@@ -1858,6 +1864,13 @@ p.smaller {
   .smaller-text {
     font-size: 13px;
     line-height: 18px; } }
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 body {
   background-color: #37ac47;

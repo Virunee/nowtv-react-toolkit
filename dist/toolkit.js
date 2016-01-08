@@ -21006,8 +21006,8 @@ module.exports =
 	      var classes = (0, _classnames2.default)('now-accordion', [this.props.classes]);
 
 	      var newChildren = _react2.default.Children.map(this.props.children, function (child, index) {
-	        var onItemClicked = function onItemClicked() {
-	          _this2._itemClicked(index);
+	        var onItemClicked = function onItemClicked(event) {
+	          event.preventDefault();_this2._itemClicked(index);
 	        };
 
 	        var newProps = {
@@ -21080,14 +21080,18 @@ module.exports =
 	  _createClass(AccordionItem, [{
 	    key: 'render',
 	    value: function render() {
+	      var _arguments = arguments;
+
 	      var classes = (0, _classnames2.default)('now-accordion-item', [this.props.classes]);
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: classes, onClick: this.props.handleVisiblity },
+	        { className: classes, onClick: function onClick() {
+	            console.log(_arguments);
+	          } },
 	        _react2.default.createElement(
-	          'span',
-	          { className: 'accordion-item-title' },
+	          'a',
+	          { className: 'accordion-item-title', onClick: this.props.handleVisiblity },
 	          this.props.title
 	        ),
 	        _react2.default.createElement(

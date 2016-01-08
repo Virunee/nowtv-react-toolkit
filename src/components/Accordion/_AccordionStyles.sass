@@ -1,8 +1,9 @@
-.now-accordion 
+.now-accordion
   .now-accordion-item
     cursor: pointer
     position: relative
     padding-left: 27px
+    z-index: 0
 
     &:before
       width: 16px
@@ -19,7 +20,10 @@
       transition-timing-function: ease-in-out
 
     .accordion-item-title
+      color: #424247
+      text-decoration: none
       @extend .nowtv-bold
+      z-index: 100
 
     .accordion-item-content
       transition: max-height 0.3s linear, margin 0.3s linear
@@ -28,7 +32,7 @@
       p
         @extend .nowtv-light
 
-  .visible 
+  .visible
     &.now-accordion-item:before
       transform: rotate(-180deg)
 
@@ -36,7 +40,7 @@
       transition: max-height 0.3s linear, margin 0.3s linear
       display: block
       margin-top: 5px;
-     
+
 @keyframes accordionIn
   0%
     opacity: 0
