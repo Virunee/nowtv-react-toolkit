@@ -26,7 +26,10 @@ class Accordion extends React.Component {
     const classes = classNames('now-accordion', [this.props.classes]);
 
     const newChildren = React.Children.map(this.props.children, (child, index) => {
-      const onItemClicked = (event) => { event.preventDefault(); this._itemClicked(index); };
+      const onItemClicked = (event) => {
+        event.preventDefault();
+        this._itemClicked(index);
+      };
 
       const newProps = {
         handleVisiblity: onItemClicked,

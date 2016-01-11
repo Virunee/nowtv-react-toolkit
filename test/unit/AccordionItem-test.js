@@ -29,4 +29,28 @@ describe('Accordion item component', () => {
     expect(accordionTitle.textContent).to.equal('My accordion item');
     expect(accordionContent.textContent).to.equal('Wooo exciting');
   });
+
+  it('tracks accordion as closing when opened', () => {
+    const renderedComponent = TestUtils.renderIntoDocument(
+      <AccordionItem title="My accordion item" isOpen={true}>
+        <p>Wooo exciting</p>
+      </AccordionItem>
+    );
+
+    const accordionTitle = TestUtils.findRenderedDOMComponentWithClass(renderedComponent, 'accordion-item-title');
+
+    expect(accordionTitle.getAttribute('data-tracking-context')).to.equal('closing');
+  });
+
+  it('tracks accordion as opening when closed', () => {
+    const renderedComponent = TestUtils.renderIntoDocument(
+      <AccordionItem title="My accordion item" isOpen={false}>
+        <p>Wooo exciting</p>
+      </AccordionItem>
+    );
+
+    const accordionTitle = TestUtils.findRenderedDOMComponentWithClass(renderedComponent, 'accordion-item-title');
+
+    expect(accordionTitle.getAttribute('data-tracking-context')).to.equal('opening');
+  });
 });

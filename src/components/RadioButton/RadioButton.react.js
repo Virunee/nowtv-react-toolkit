@@ -4,7 +4,7 @@ import classNames from 'classnames';
 class RadioButton extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { checked: (this.props.checked || false) };
+      this.state = { checked: (props.checked || false) };
       this.handleChecked = this.handleChecked.bind(this);
     }
 

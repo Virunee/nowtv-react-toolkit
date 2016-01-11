@@ -46,7 +46,7 @@ describe('Accordion component', () => {
     const accordionItem2 = ReactDOM.findDOMNode(accordionItems[1]);
     const accordionItem3 = ReactDOM.findDOMNode(accordionItems[2]);
 
-    TestUtils.Simulate.click(accordionItem);
+    TestUtils.Simulate.click(accordionItem.firstChild);
     expect(accordionItem.className.trim()).to.include('visible');
     expect(accordionItem2.className.trim()).to.not.include('visible');
     expect(accordionItem3.className.trim()).to.not.include('visible');
@@ -67,12 +67,12 @@ describe('Accordion component', () => {
     const accordionItem2 = ReactDOM.findDOMNode(accordionItems[1]);
     const accordionItem3 = ReactDOM.findDOMNode(accordionItems[2]);
 
-    TestUtils.Simulate.click(accordionItem);
+    TestUtils.Simulate.click(accordionItem.firstChild);
     expect(accordionItem.className.trim()).to.include('visible');
     expect(accordionItem2.className.trim()).to.not.include('visible');
     expect(accordionItem2.className.trim()).to.not.include('visible');
-    
-    TestUtils.Simulate.click(accordionItem);
+
+    TestUtils.Simulate.click(accordionItem.firstChild);
     expect(accordionItem.className.trim()).to.not.include('visible');
     expect(accordionItem2.className.trim()).to.not.include('visible');
     expect(accordionItem2.className.trim()).to.not.include('visible');

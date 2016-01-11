@@ -4,7 +4,7 @@ import classNames from 'classnames';
 class ToggleButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { checked: (this.props.checked || false) };
+    this.state = { checked: (props.checked || false) };
     this.handleChecked = this.handleChecked.bind(this);
     this.onChange = this.onChange.bind(this);
   }

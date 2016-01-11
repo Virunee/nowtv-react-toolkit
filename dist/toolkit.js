@@ -19978,7 +19978,7 @@ module.exports =
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Checkbox).call(this, props));
 
-	    _this.state = { checked: _this.props.checked || false };
+	    _this.state = { checked: props.checked || false };
 	    _this._handleChecked = _this._handleChecked.bind(_this);
 	    return _this;
 	  }
@@ -20064,7 +20064,7 @@ module.exports =
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(RadioButton).call(this, props));
 
-	    _this.state = { checked: _this.props.checked || false };
+	    _this.state = { checked: props.checked || false };
 	    _this.handleChecked = _this.handleChecked.bind(_this);
 	    return _this;
 	  }
@@ -20152,7 +20152,7 @@ module.exports =
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ToggleButton).call(this, props));
 
-	    _this.state = { checked: _this.props.checked || false };
+	    _this.state = { checked: props.checked || false };
 	    _this.handleChecked = _this.handleChecked.bind(_this);
 	    _this.onChange = _this.onChange.bind(_this);
 	    return _this;
@@ -21007,7 +21007,8 @@ module.exports =
 
 	      var newChildren = _react2.default.Children.map(this.props.children, function (child, index) {
 	        var onItemClicked = function onItemClicked(event) {
-	          event.preventDefault();_this2._itemClicked(index);
+	          event.preventDefault();
+	          _this2._itemClicked(index);
 	        };
 
 	        var newProps = {

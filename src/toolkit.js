@@ -12,7 +12,7 @@ import Accordion from './components/Accordion/Accordion.react';
 import AccordionItem from './components/Accordion/AccordionItem.react';
 import Spinner from './components/Spinner/Spinner.react';
 
-import Styles from './toolkit.sass'
+import Styles from './toolkit.sass';
 
 export default {
 	Button,
