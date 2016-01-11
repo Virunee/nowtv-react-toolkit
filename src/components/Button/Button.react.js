@@ -8,7 +8,7 @@ export default class Button extends React.Component {
 
   static propTypes = {
     type: PropTypes.oneOf(['primary', 'secondary']).isRequired,
-    color: PropTypes.oneOf(['red', 'yellow', 'green', 'blue']).isRequired
+    color: PropTypes.oneOf(['red', 'yellow', 'green', 'blue', 'grey']).isRequired
   };
 
   render() {

@@ -181,7 +181,7 @@ module.exports =
 	};
 	Button.propTypes = {
 	  type: _react.PropTypes.oneOf(['primary', 'secondary']).isRequired,
-	  color: _react.PropTypes.oneOf(['red', 'yellow', 'green', 'blue']).isRequired
+	  color: _react.PropTypes.oneOf(['red', 'yellow', 'green', 'blue', 'grey']).isRequired
 	};
 	exports.default = Button;
 
@@ -21081,18 +21081,14 @@ module.exports =
 	  _createClass(AccordionItem, [{
 	    key: 'render',
 	    value: function render() {
-	      var _arguments = arguments;
-
 	      var classes = (0, _classnames2.default)('now-accordion-item', [this.props.classes]);
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: classes, onClick: function onClick() {
-	            console.log(_arguments);
-	          } },
+	        { className: classes },
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'accordion-item-title', onClick: this.props.handleVisiblity },
+	          { href: '#', className: 'accordion-item-title', 'data-tracking-context': this.props.isOpen ? 'closing' : 'opening', onClick: this.props.handleVisiblity },
 	          this.props.title
 	        ),
 	        _react2.default.createElement(
@@ -21108,7 +21104,7 @@ module.exports =
 	}(_react2.default.Component);
 
 	AccordionItem.propTypes = {
-	  children: _react2.default.PropTypes.arrayOf(_react2.default.PropTypes.object),
+	  children: _react2.default.PropTypes.node,
 	  classes: _react2.default.PropTypes.string,
 	  handleVisiblity: _react2.default.PropTypes.func,
 	  isOpen: _react2.default.PropTypes.bool,

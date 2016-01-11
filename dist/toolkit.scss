@@ -454,7 +454,6 @@
         left: 0; } }
 
 .now-accordion .now-accordion-item {
-  cursor: pointer;
   position: relative;
   padding-left: 27px;
   z-index: 0; }
@@ -640,6 +639,80 @@
   100% {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg); } }
+
+.now-button_primary, .now-button_primary_red, .now-button_primary_blue, .now-button_primary_yellow, .now-button_primary_green, .now-button_primary_grey, .now-button_secondary, .now-button_secondary_red, .now-button_secondary_green, .now-button_secondary_yellow, .now-button_secondary_blue, .now-button_secondary_grey, .now-button_negative, .now-button {
+  font: 16px nowtv-regular, sans-serif;
+  background-color: transparent;
+  width: 100%;
+  max-width: 345px;
+  margin: 0 auto;
+  padding: 10px 32px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 28px;
+  border: 0; }
+  .now-button_primary:hover, .now-button_primary_red:hover, .now-button_primary_blue:hover, .now-button_primary_yellow:hover, .now-button_primary_green:hover, .now-button_primary_grey:hover, .now-button_secondary:hover, .now-button_secondary_red:hover, .now-button_secondary_green:hover, .now-button_secondary_yellow:hover, .now-button_secondary_blue:hover, .now-button_secondary_grey:hover, .now-button_negative:hover, .now-button:hover, .is-hovered.now-button_primary, .is-hovered.now-button_primary_red, .is-hovered.now-button_primary_blue, .is-hovered.now-button_primary_yellow, .is-hovered.now-button_primary_green, .is-hovered.now-button_primary_grey, .is-hovered.now-button_secondary, .is-hovered.now-button_secondary_red, .is-hovered.now-button_secondary_green, .is-hovered.now-button_secondary_yellow, .is-hovered.now-button_secondary_blue, .is-hovered.now-button_secondary_grey, .is-hovered.now-button_negative, .is-hovered.now-button {
+    opacity: 0.9; }
+  .now-button_primary:active, .now-button_primary_red:active, .now-button_primary_blue:active, .now-button_primary_yellow:active, .now-button_primary_green:active, .now-button_primary_grey:active, .now-button_secondary:active, .now-button_secondary_red:active, .now-button_secondary_green:active, .now-button_secondary_yellow:active, .now-button_secondary_blue:active, .now-button_secondary_grey:active, .now-button_negative:active, .now-button:active, .is-active.now-button_primary, .is-active.now-button_primary_red, .is-active.now-button_primary_blue, .is-active.now-button_primary_yellow, .is-active.now-button_primary_green, .is-active.now-button_primary_grey, .is-active.now-button_secondary, .is-active.now-button_secondary_red, .is-active.now-button_secondary_green, .is-active.now-button_secondary_yellow, .is-active.now-button_secondary_blue, .is-active.now-button_secondary_grey, .is-active.now-button_negative, .is-active.now-button {
+    opacity: 0.7; }
+  .now-button_primary:focus, .now-button_primary_red:focus, .now-button_primary_blue:focus, .now-button_primary_yellow:focus, .now-button_primary_green:focus, .now-button_primary_grey:focus, .now-button_secondary:focus, .now-button_secondary_red:focus, .now-button_secondary_green:focus, .now-button_secondary_yellow:focus, .now-button_secondary_blue:focus, .now-button_secondary_grey:focus, .now-button_negative:focus, .now-button:focus {
+    outline: 0; }
+  .now-button_primary [disabled=disabled], .now-button_primary_red [disabled=disabled], .now-button_primary_blue [disabled=disabled], .now-button_primary_yellow [disabled=disabled], .now-button_primary_green [disabled=disabled], .now-button_primary_grey [disabled=disabled], .now-button_secondary [disabled=disabled], .now-button_secondary_red [disabled=disabled], .now-button_secondary_green [disabled=disabled], .now-button_secondary_yellow [disabled=disabled], .now-button_secondary_blue [disabled=disabled], .now-button_secondary_grey [disabled=disabled], .now-button_negative [disabled=disabled], .now-button [disabled=disabled], .now-button_primary:disabled, .now-button_primary_red:disabled, .now-button_primary_blue:disabled, .now-button_primary_yellow:disabled, .now-button_primary_green:disabled, .now-button_primary_grey:disabled, .now-button_secondary:disabled, .now-button_secondary_red:disabled, .now-button_secondary_green:disabled, .now-button_secondary_yellow:disabled, .now-button_secondary_blue:disabled, .now-button_secondary_grey:disabled, .now-button_negative:disabled, .now-button:disabled {
+    cursor: default;
+    opacity: 0.3 !important; }
+
+.now-button_primary {
+  background-color: #40AD46; }
+
+.now-button_primary_red {
+  background-color: #EF3A35; }
+
+.now-button_primary_blue {
+  background-color: #2C3E72; }
+
+.now-button_primary_yellow {
+  background-color: #F6B432; }
+
+.now-button_primary_green {
+  background-color: #40AD46; }
+
+.now-button_primary_grey {
+  background-color: #CCCED3; }
+
+.now-button_secondary {
+  color: #424247;
+  background-color: #D9D9DE; }
+
+.now-button_secondary_red {
+  color: #EF3A35;
+  border: 2px solid currentColor;
+  background-color: transparent; }
+
+.now-button_secondary_green {
+  color: #40AD46;
+  border: 2px solid currentColor;
+  background-color: transparent; }
+
+.now-button_secondary_yellow {
+  color: #F6B432;
+  border: 2px solid currentColor;
+  background-color: transparent; }
+
+.now-button_secondary_blue {
+  color: #2C3E72;
+  border: 2px solid currentColor;
+  background-color: transparent; }
+
+.now-button_secondary_grey {
+  color: #CCCED3;
+  border: 2px solid currentColor;
+  background-color: transparent; }
+
+.now-button_negative {
+  background-color: #CF000F; }
 
 @font-face {
   font-family: nowtv-light;

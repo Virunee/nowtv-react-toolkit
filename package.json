@@ -70,6 +70,6 @@
     "serve-static": "^1.9.3"
   },
   "dependencies": {
-    "nowtv-toolkit": "https://github.com/sky-uk/nowtv-toolkit.git#v0.0.2"
+    "nowtv-toolkit": "https://github.com/sky-uk/nowtv-toolkit.git#v0.0.3"
   }
 }

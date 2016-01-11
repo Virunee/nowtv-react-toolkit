@@ -22,7 +22,7 @@ class AccordionItem extends React.Component {
 }
 
 AccordionItem.propTypes = {
-  children: React.PropTypes.arrayOf(React.PropTypes.object),
+  children: React.PropTypes.node,
   classes: React.PropTypes.string,
   handleVisiblity: React.PropTypes.func,
   isOpen: React.PropTypes.bool,
